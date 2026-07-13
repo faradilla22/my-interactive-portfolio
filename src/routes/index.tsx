@@ -97,7 +97,7 @@ function Hero() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight"
           >
-            Hi, I'm <span className="text-primary italic">Faradilla</span>.
+            Hi, I'm <span className="text-primary italic">Faradilla  Maulia</span>.
             <br />
             I turn data
             <br />
@@ -178,7 +178,7 @@ function Stat({ value, label }: { value: string; label: string }) {
 }
 
 function Marquee() {
-  const items = ["Python", "SQL", "Power BI", "Looker Studio", "Figma", "Pandas", "XGBoost", "Streamlit", "Laravel", "AI Agents", "n8n", "Excel"];
+  const items = ["Python", "SQL", "Power BI", "Looker Studio", "Figma", "Pandas", "Streamlit", "Laravel", "AI Agents", "Excel"];
   const doubled = [...items, ...items];
   return (
     <div className="border-y border-border bg-card overflow-hidden py-5">
@@ -221,14 +221,14 @@ function About() {
           <p>
             Outside class, I served on the UI/UX division of <strong>Google Developer Student Clubs</strong> and as a
             staff of the Strategic Studies and Advocacy Department at <strong>HMIF Unsri</strong> — where I chaired
-            plenary sessions, ran 5 club events, and mentored 20+ new members.
+            plenary sessions, ran 5 club events, and supervised programming session of 20+ newly students.
           </p>
         </div>
         <div className="md:col-span-2 space-y-3">
           <InfoRow icon={<GraduationCap className="w-4 h-4" />} label="Education" value="B.Sc Informatics Engineering — Universitas Sriwijaya (2022–2026)" />
           <InfoRow icon={<Award className="w-4 h-4" />} label="GPA" value="3.95 / 4.00" />
           <InfoRow icon={<MapPin className="w-4 h-4" />} label="Based in" value="Palembang, South Sumatra" />
-          <InfoRow icon={<Sparkles className="w-4 h-4" />} label="Languages" value="Indonesian · English (SULIET 507)" />
+          <InfoRow icon={<Sparkles className="w-4 h-4" />} label="Languages" value="Indonesian · English" />
         </div>
       </div>
     </section>
@@ -262,7 +262,7 @@ function Experience() {
       org: "Google Developer Student Clubs Unsri",
       icon: <Palette className="w-4 h-4" />,
       body: "Delivered an end-to-end UI/UX portfolio via the design thinking process and supported 4 workprograms including a Redesign Challenge and Flutter × TensorFlow Workshop.",
-      link: "https://bit.ly/Portofolio_Faradilla-Maulia",
+      link: "https://media.licdn.com/dms/image/v2/D562DAQEdZXaY2dCUkg/profile-treasury-document-images_1280/profile-treasury-document-images_1280/1/1724915479045?e=1784764800&v=beta&t=HJ-AJ5qQNOAEak7NbC4gwonA8FNNWICVx8s43vUwfmI",
     },
     {
       when: "Feb 2023 – Jan 2024",
@@ -270,7 +270,7 @@ function Experience() {
       org: "HMIF Universitas Sriwijaya",
       icon: <Sparkles className="w-4 h-4" />,
       body: "Chaired the HMIF General Assembly plenary, organized 5 events (SRIFOTON, IF Cup), and mentored 20+ new members through programming training.",
-      link: "#",
+      link: "https://media.licdn.com/dms/image/v2/D562DAQFsI0g1F8sywA/profile-treasury-image-shrink_1920_1920/profile-treasury-image-shrink_1920_1920/0/1719372011279?e=1784548800&v=beta&t=scTc_wRdArRi0pr6EDc-b95xU421bElv44OWTUyqL_8",
     },
   ];
   return (
