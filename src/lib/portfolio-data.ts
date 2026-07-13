@@ -50,7 +50,7 @@ export const PORTFOLIO: PortfolioItem[] = [
       "Turned SQL results into decision-ready insight",
     ],
     stack: ["SQL", "MySQL Workbench", "ERD"],
-    link: "https://bit.ly/Portofolio_Faradilla-Maulia",
+    link: "https://canva.link/8anjsopjanqosbd",
     accent: "sage",
   },
   {
