@@ -254,7 +254,7 @@ function Experience() {
       org: "PT Pupuk Sriwidjaja Palembang",
       icon: <Briefcase className="w-4 h-4" />,
       body: "Built a web-based Equipment Criticality Rating (ECR) module in Laravel 11 with role-based access, RAD workflow, and Black Box Testing until 100% test cases were Accepted.",
-      link: INTERNSHIP_LETTER,
+      link: "https://media.licdn.com/dms/image/v2/D562DAQHJHRNIDxXqVA/profile-treasury-document-cover-images_1280/profile-treasury-document-cover-images_1280/0/1729051458924?e=1784548800&v=beta&t=9d8k78ZvWmifd27ob754NiEsfj3pNQRCVzG4OQ588xg",
     },
     {
       when: "Oct 2023 – Aug 2024",
