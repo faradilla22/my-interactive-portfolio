@@ -87,7 +87,7 @@ function ProjectPage() {
           <section>
             <h2 className="text-xs uppercase tracking-[0.3em] text-primary mb-4">Highlights</h2>
             <ul className="space-y-3">
-              {item.highlights.map((h) => (
+              {item.highlights.map((h: string) => (
                 <li key={h} className="flex items-start gap-3 text-lg">
                   <CheckCircle2 className="w-5 h-5 mt-1 text-primary flex-shrink-0" />
                   <span>{h}</span>
@@ -110,7 +110,7 @@ function ProjectPage() {
           <div className="rounded-2xl border border-border bg-card p-6">
             <h3 className="text-xs uppercase tracking-widest text-primary mb-3">Stack</h3>
             <div className="flex flex-wrap gap-1.5">
-              {item.stack.map((s) => (
+              {item.stack.map((s: string) => (
                 <span key={s} className="rounded-full border border-border bg-background px-2.5 py-1 text-xs font-mono">{s}</span>
               ))}
             </div>
