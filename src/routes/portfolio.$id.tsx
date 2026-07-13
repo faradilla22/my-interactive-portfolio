@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import { ArrowLeft, ArrowUpRight, ExternalLink, CheckCircle2 } from "lucide-react";
-import { PORTFOLIO } from "@/lib/portfolio-data";
+import { PORTFOLIO, type PortfolioItem } from "@/lib/portfolio-data";
 
 export const Route = createFileRoute("/portfolio/$id")({
   head: ({ params }) => {
@@ -13,7 +13,7 @@ export const Route = createFileRoute("/portfolio/$id")({
       ],
     };
   },
-  loader: ({ params }) => {
+  loader: ({ params }): { item: PortfolioItem } => {
     const item = PORTFOLIO.find((p) => p.id === params.id);
     if (!item) throw notFound();
     return { item };
