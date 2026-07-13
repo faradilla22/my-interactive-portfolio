@@ -57,7 +57,7 @@ function Nav() {
       <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2 font-display text-2xl">
           <span className="inline-block w-2.5 h-2.5 rounded-full bg-primary" />
-          Faradilla<span className="text-primary">.</span>
+          Faradilla Maulia<span className="text-primary">.</span>
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm">
           <a href="#about" className="hover:text-primary transition-colors">About</a>
