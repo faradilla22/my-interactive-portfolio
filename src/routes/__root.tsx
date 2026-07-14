@@ -11,8 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-
-const baseUrl = import.meta.env.BASE_URL;
+import iconAsset from "../assets/icon-website.png.asset.json";
 
 function NotFoundComponent() {
   return (
@@ -79,14 +78,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Faradilla Maulia — Data Analyst & UI/UX Designer" },
+      { title: "Faradilla Maulia - Data Analyst, BI Analyst, & UI/UX Designer" },
       {
         name: "description",
         content:
           "Interactive portfolio of Faradilla Maulia — Informatics Engineering graduate, aspiring Data Analyst, BI Analyst, and UI/UX Designer.",
       },
       { name: "author", content: "Faradilla Maulia" },
-      { property: "og:title", content: "Faradilla Maulia — Data & Design Portfolio" },
+      { property: "og:title", content: "Faradilla Maulia - Data Analyst, BI Analyst, & UI/UX Designer" },
       {
         property: "og:description",
         content:
@@ -100,7 +99,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: `${baseUrl}favicon.ico`, type: "image/x-icon" },
+      { rel: "icon", type: "image/png", href: iconAsset.url },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       {
         rel: "preconnect",
