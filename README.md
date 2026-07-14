@@ -11,4 +11,4 @@ Website portfolio interaktif untuk Faradilla Maulia, fresh graduate Informatics 
 
 ## Lisensi
 
-© Faradilla Maulia — Dibuat dengan data ✦ curiousity ✦ coffee.
+© Faradilla Maulia — Make with data ✦ curiousity ✦ coffee.
