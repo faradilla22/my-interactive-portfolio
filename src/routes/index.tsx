@@ -254,7 +254,7 @@ function Experience() {
       org: "PT Pupuk Sriwidjaja Palembang",
       icon: <Briefcase className="w-4 h-4" />,
       body: "Built a web-based Equipment Criticality Rating (ECR) module in Laravel 11 with role-based access, RAD workflow, and Black Box Testing until 100% test cases were Accepted.",
-      link: #,
+      link: "#",
     },
     {
       when: "Oct 2023 – Aug 2024",
