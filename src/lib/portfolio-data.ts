@@ -169,7 +169,6 @@ export const PORTFOLIO: PortfolioItem[] = [
 
 export const CERTIFICATES_LINK = "https://bit.ly/Sertifikat_Faradilla-Maulia";
 export const PORTFOLIO_HUB = "https://bit.ly/Portofolio_Faradilla-Maulia";
-export const INTERNSHIP_LETTER = "https://bit.ly/Surat-Keterangan-Internship";
 
 export type Certificate = {
   id: string;
