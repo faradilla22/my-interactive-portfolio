@@ -45,6 +45,7 @@ function Index() {
       <About />
       <Experience />
       <Portfolio />
+      <Certificates />
       <Skills />
       <Contact />
       <Footer />
