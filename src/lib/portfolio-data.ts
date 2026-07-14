@@ -170,3 +170,65 @@ export const PORTFOLIO: PortfolioItem[] = [
 export const CERTIFICATES_LINK = "https://bit.ly/Sertifikat_Faradilla-Maulia";
 export const PORTFOLIO_HUB = "https://bit.ly/Portofolio_Faradilla-Maulia";
 export const INTERNSHIP_LETTER = "https://bit.ly/Surat-Keterangan-Internship";
+
+export type Certificate = {
+  id: string;
+  title: string;
+  issuer: string;
+  date: string;
+  link: string;
+  tags: string[];
+};
+
+// NOTE: Replace `link` values with the real URLs to each certificate.
+// `id` is the slug; `tags` is only used as labels on the card.
+export const CERTIFICATES: Certificate[] = [
+  {
+    id: "data-analyst-dicoding",
+    title: "Data Analyst Bootcamp",
+    issuer: "Dicoding Indonesia",
+    date: "2024",
+    link: "#",
+    tags: ["Data Analysis", "Python", "SQL"],
+  },
+  {
+    id: "sql-hacker-rank",
+    title: "SQL Intermediate",
+    issuer: "HackerRank",
+    date: "2024",
+    link: "#",
+    tags: ["SQL", "Querying"],
+  },
+  {
+    id: "google-data-analytics",
+    title: "Google Data Analytics Specialization",
+    issuer: "Coursera (Google)",
+    date: "2024",
+    link: "#",
+    tags: ["R", "Spreadsheet", "Data Viz"],
+  },
+  {
+    id: "machine-learning-dicoding",
+    title: "Machine Learning Beginner",
+    issuer: "Dicoding Indonesia",
+    date: "2024",
+    link: "#",
+    tags: ["Python", "TensorFlow", "scikit-learn"],
+  },
+  {
+    id: "ux-research-google",
+    title: "UX Research Fundamentals",
+    issuer: "Google UX Design Certificate",
+    date: "2023",
+    link: "#",
+    tags: ["UX Research", "Figma"],
+  },
+  {
+    id: "bi-dashboard",
+    title: "Power BI & Looker Studio Workshop",
+    issuer: "Universitas Sriwijaya",
+    date: "2023",
+    link: "#",
+    tags: ["Power BI", "Looker Studio"],
+  },
+];

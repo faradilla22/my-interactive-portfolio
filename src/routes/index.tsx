@@ -18,9 +18,10 @@ import {
   Database,
   BarChart3,
   Brain,
+  Medal,
 } from "lucide-react";
 import heroIllustration from "@/assets/hero-illustration.jpg";
-import { PORTFOLIO, CERTIFICATES_LINK, INTERNSHIP_LETTER, type PortfolioItem } from "@/lib/portfolio-data";
+import { PORTFOLIO, CERTIFICATES_LINK, INTERNSHIP_LETTER, type PortfolioItem, CERTIFICATES, type Certificate } from "@/lib/portfolio-data";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -44,6 +45,7 @@ function Index() {
       <About />
       <Experience />
       <Portfolio />
+      <Certificates />
       <Skills />
       <Contact />
       <Footer />
@@ -63,6 +65,7 @@ function Nav() {
           <a href="#about" className="hover:text-primary transition-colors">About</a>
           <a href="#experience" className="hover:text-primary transition-colors">Experience</a>
           <a href="#portfolio" className="hover:text-primary transition-colors">Portfolio</a>
+          <a href="#certificates" className="hover:text-primary transition-colors">Certificates</a>
           <a href="#skills" className="hover:text-primary transition-colors">Skills</a>
           <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
         </nav>
@@ -383,6 +386,65 @@ function PortfolioCard({ item, index }: { item: PortfolioItem; index: number }) 
         </div>
       </Link>
     </motion.div>
+  );
+}
+
+function Certificates() {
+  return (
+    <section id="certificates" className="mx-auto max-w-6xl px-6 py-24">
+      <SectionHead
+        eyebrow="Certificates"
+        title="Training & certifications I've completed."
+        kicker="Each card links to the credential. Replace the placeholder links with your own certificate URLs."
+      />
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {CERTIFICATES.map((cert, i) => (
+          <CertificateCard key={cert.id} cert={cert} index={i} />
+        ))}
+      </div>
+      <div className="mt-10 text-center">
+        <a
+          href={CERTIFICATES_LINK}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-3 text-sm font-medium hover:border-primary transition"
+        >
+          <Download className="w-4 h-4" /> Download all certificates
+        </a>
+      </div>
+    </section>
+  );
+}
+
+function CertificateCard({ cert, index }: { cert: Certificate; index: number }) {
+  return (
+    <motion.a
+      key={cert.id}
+      href={cert.link}
+      target="_blank"
+      rel="noreferrer"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ delay: index * 0.06 }}
+      className="group block rounded-2xl border border-border bg-card p-6 hover:border-primary transition-all hover:-translate-y-0.5 h-full"
+    >
+      <div className="flex items-start justify-between gap-4 mb-4">
+        <div className="rounded-full bg-primary/10 p-2.5 text-primary">
+          <Medal className="w-5 h-5" />
+        </div>
+        <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:rotate-45 transition-all" />
+      </div>
+      <div className="text-xs uppercase tracking-widest text-primary mb-2">{cert.issuer} · {cert.date}</div>
+      <h3 className="font-display text-xl leading-tight mb-3">{cert.title}</h3>
+      <div className="flex flex-wrap gap-1.5">
+        {cert.tags.map((tag) => (
+          <span key={tag} className="rounded-full bg-background/70 border border-border px-2.5 py-0.5 text-[11px] font-mono">
+            {tag}
+          </span>
+        ))}
+      </div>
+    </motion.a>
   );
 }
 
