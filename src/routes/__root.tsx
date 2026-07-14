@@ -11,7 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import iconAsset from "../assets/icon-website.png.asset.json";
+import iconUrl from "../assets/icon-website.png";
 
 function NotFoundComponent() {
   return (
@@ -99,7 +99,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", type: "image/png", href: iconAsset.url },
+      { rel: "icon", type: "image/png", href: iconUrl },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       {
         rel: "preconnect",
