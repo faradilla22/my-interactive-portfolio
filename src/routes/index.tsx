@@ -263,7 +263,7 @@ function Experience() {
       org: "Google Developer Student Clubs Unsri",
       icon: <Palette className="w-4 h-4" />,
       body: "Delivered an end-to-end UI/UX portfolio via the design thinking process and supported 4 workprograms including a Redesign Challenge and Flutter × TensorFlow Workshop.",
-      link: "https://media.licdn.com/dms/image/v2/D562DAQEdZXaY2dCUkg/profile-treasury-document-images_1280/profile-treasury-document-images_1280/1/1724915479045?e=1784764800&v=beta&t=HJ-AJ5qQNOAEak7NbC4gwonA8FNNWICVx8s43vUwfmI",
+      link: "https://drive.google.com/file/d/1bHXRlXhNvHAmu_unWv5_PNVSUKJIQmjx/view?usp=sharing",
     },
     {
       when: "Feb 2023 – Jan 2024",
@@ -271,7 +271,7 @@ function Experience() {
       org: "HMIF Universitas Sriwijaya",
       icon: <Sparkles className="w-4 h-4" />,
       body: "Chaired the HMIF General Assembly plenary, organized 5 events (SRIFOTON, IF Cup), and mentored 20+ new members through programming training.",
-      link: "https://media.licdn.com/dms/image/v2/D562DAQFsI0g1F8sywA/profile-treasury-image-shrink_1920_1920/profile-treasury-image-shrink_1920_1920/0/1719372011279?e=1784548800&v=beta&t=scTc_wRdArRi0pr6EDc-b95xU421bElv44OWTUyqL_8",
+      link: "https://drive.google.com/file/d/1c_WoLNAKSwwsfb6FzENk1E4Hq9xXtwa3/view?usp=sharing",
     },
   ];
   return (
